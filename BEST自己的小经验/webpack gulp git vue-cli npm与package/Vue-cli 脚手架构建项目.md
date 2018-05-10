@@ -22,7 +22,7 @@
     
 项目安装后项目结构：
 
-![项目结构](http://files.jb51.net/file_images/article/201707/2017071816240939.jpg)
+![image](https://files.jb51.net/file_images/article/201707/2017071816240939.jpg)
 
     ├── build              // 项目构建(webpack)相关代码  
         │ ├── build.js       // 生产环境构建代码

@@ -9,6 +9,8 @@
 > 4.`git commit -a` 或者 `git commit -m` "日志" 弹出VIM编辑器？
 > 
 > 5.加入`.gitignore`的文件夹但在远程仓库之前就存在该如何删除?
+>
+> 6.清屏
 
 ### 1.如何初次上传代码？
 确定你已经下载`git`配置好相关密钥并在远程仓库已经创建了`your-repository`：
@@ -50,7 +52,7 @@
 
     git push -u origin master // 上传代码
     git branch -D newbranch // 删除newbranch这个分支
-    git branch -D newbranch // 保留分支只想删除已合并的部分
+    git branch -d  newbranch // 保留分支只想删除已合并的部分
 
 ### 4.`git commit -a` 或者 `git commit -m` "日志" 弹出VIM编辑器？
 
@@ -68,7 +70,7 @@
 2. 删除后`Esc`退出输入状态，然后`Shift` + `;`，再输入`q!`或`wq!`（不保存改动，`wq!`是保存文件的写入修改）,然后你就可以进行其他合并分支或者上传操作了。
 
 ### 5.加入`.gitignore`的文件夹但在远程仓库之前就存在该如何删除?
-`.gitignore` 文件夹是设置Git上传时需要忽略的文件以及文件夹：
+项目根目录创建`.gitignore`，`.gitignore` 文件夹是设置Git上传时需要忽略的文件以及文件夹：
 
     .gitignore内容：
     node_modules
@@ -78,3 +80,6 @@
     git rm -r --cached some-directory
     git commit -m 'Remove the now ignored directory "some-directory"'
     git push origin master
+    
+### 6.清屏
+`clear`

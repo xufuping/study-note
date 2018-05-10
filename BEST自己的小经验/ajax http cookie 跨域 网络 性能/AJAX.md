@@ -137,8 +137,6 @@ GET请求常用于向服务器查询某些信息。
 	var confirm = document.getElementById("confirm");
 	var info = document.getElementById("info");
 	var data = new FormData(info);
-	
-	data.append('add_data', '测试');
 
 	confirm.addEventListener("click", function(){
 		var xhr = new XMLHttpRequest();

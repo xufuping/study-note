@@ -26,6 +26,14 @@
     
     // 局部安装
     cnpm install webpack --sava-dev
+    
+    /*
+    如果遇到如下错误
+    Please install 'webpack-cli' in addition to webpack itself to use the CLI.
+    请安装wepack-cli：
+    全局：cnpm i -g webpack-cli
+    在项目本地安装：cnpm install webpack-cli -D
+    */
 
 安装完毕后，使用`webpack -v`检测你的`webpack`版本。
 
@@ -136,7 +144,7 @@ webpack.config.js 内容如下：
 
 关于热更新服务，该功能的目的是使用`webpack`打包后，启动服务看打包后的文件的效果。下载：
 
-    cnpm install webpack-dev-server –save-dev
+    cnpm install webpack-dev-server --save-dev
     
 因为这里也是局部安装，所以我们也要在`package.json`里配置 `scripts`:
 

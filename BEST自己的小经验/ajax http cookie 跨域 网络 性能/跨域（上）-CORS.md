@@ -50,7 +50,7 @@ IE8引入了`XDR类型`，与XHR相似，不同之处：
     xdr.send(...);
 
 #### 1.2 其他浏览器
-请求位于亮一个域中的资源，使用标准的 `XHR对象` 并在 `open()` 方法中传入绝对URL即可。
+请求位于另一个域中的资源，使用标准的 `XHR对象` 并在 `open()` 方法中传入绝对URL即可。
 
     var xhr = new XMLHttpRequest();
     

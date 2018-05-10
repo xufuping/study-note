@@ -134,3 +134,13 @@
 
     console.log(Array.constructor === Function); // true
     console.log(Function.constructor === Function); // true
+    
+【附图】
+
+(图片 -> 构造函数 实例 原型.png)
+
+原型对象是构造函数的prototype属性，是所有实例化对象共享属性和方法的原型对象；
+
+实例化对象通过new构造函数得到，都继承了原型对象的属性和方法；
+
+原型对象中有个隐式的constructor，指向了构造函数本身。
